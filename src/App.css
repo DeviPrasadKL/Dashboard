@@ -1,0 +1,34 @@
+/* For all fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+/* Font for logo  */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
+
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Navbar Starts */
+.navigation1{
+    color: rgb(100, 100, 100);
+}
+.navigation1 li:nth-child(1){
+    color: black;
+}
+.navigation1 li:nth-child(2){
+    color: black;
+}
+.navigation2 li{
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: none;
+}
+/* Navbar Ends */
+
+/* Left starts */
+.logoText{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+/* Left ends */
