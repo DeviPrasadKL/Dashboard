@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Left from './Left'
 import Right from './Right'
+import { BrowserRouter } from 'react-router-dom';
 
 export default function Dashboard() {
   const[open, setOpen] = useState(true);
@@ -16,15 +17,16 @@ export default function Dashboard() {
     } else if (width > breakpoint){
       setOpen(true);
     }
-    console.log(width);
   },[width])
 
   return (
     <div className='flex w-screen h-screen'>
+      <BrowserRouter>
       <div className='h-auto p-4 border-r-4 w-min'>
         <Left props={props}/>
       </div>
       <Right props={props}/>
+      </BrowserRouter>
     </div>
   )
 }
