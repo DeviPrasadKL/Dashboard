@@ -3,7 +3,11 @@ import logo from "/assets/novel-favicon.webp";
 import { Link } from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import { makeStyles } from '@mui/material';
+import CameraOutlinedIcon from '@mui/icons-material/CameraOutlined';
+import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
+import SpeakerNotesOutlinedIcon from '@mui/icons-material/SpeakerNotesOutlined';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import { ListItem, Stack } from '@mui/material';
 
 
 export default function Left({ props }) {
@@ -21,14 +25,14 @@ export default function Left({ props }) {
           <ul className='[&>*]:text-slate-500'>
             <li className='flex items-center justify-between h-10 p-2 hover:rounded-md hover:bg-blue-500 hover:text-white'>
               <div className='flex items-center'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-aperture" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><path d="M3.6 15h10.55"></path><path d="M6.551 4.938l3.26 10.034"></path><path d="M17.032 4.636l-8.535 6.201"></path><path d="M20.559 14.51l-8.535 -6.201"></path><path d="M12.257 20.916l3.261 -10.034"></path></svg>
+                <CameraOutlinedIcon />
                 <span className='px-2' style={{ display: props.open ? "block" : "none" }} >Modern</span>
               </div>
             </li>
 
             <li className='flex items-center justify-between h-10 p-2 hover:rounded-md hover:bg-blue-500 hover:text-white'>
               <div className='flex items-center'>
-                <ShoppingCartOutlinedIcon color='action' className='hover:text-white focus:text-white'/>
+                <ShoppingCartOutlinedIcon />
                 <span className='px-2' style={{ display: props.open ? "block" : "none" }} >eCommerce</span>
               </div>
             </li>
@@ -42,7 +46,7 @@ export default function Left({ props }) {
                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-package" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"></polyline><line x1="12" y1="12" x2="20" y2="7.5"></line><line x1="12" y1="12" x2="12" y2="21"></line><line x1="12" y1="12" x2="4" y2="7.5"></line><line x1="16" y1="5.25" x2="8" y2="9.75"></line></svg>
                 <span className='px-2' style={{ display: props.open ? "block" : "none" }} >eCommerce</span>
               </div>
-              <KeyboardArrowDownIcon color="action" />
+              <KeyboardArrowDownIcon/>
             </li>
             <li className='flex items-center justify-between h-10 p-2 hover:rounded-md hover:bg-blue-500 hover:text-white'>
               <div className='flex items-center'>
@@ -53,21 +57,21 @@ export default function Left({ props }) {
             </li>
             <li className='flex items-center justify-between h-10 p-2 hover:rounded-md hover:bg-blue-500 hover:text-white'>
               <div className='flex items-center'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-basket" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="7 10 12 4 17 10"></polyline><path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z"></path><circle cx="12" cy="15" r="2"></circle></svg>
+                <ShoppingBasketOutlinedIcon />
                 <span className='px-2' style={{ display: props.open ? "block" : "none" }}>Ecommerce</span>
               </div>
               <KeyboardArrowDownIcon color="action" />
             </li>
             <li className='flex items-center justify-between h-10 p-2 hover:rounded-md hover:bg-blue-500 hover:text-white'>
               <div className='flex items-center'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-message-2" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 20l-3 -3h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-2l-3 3"></path><line x1="8" y1="9" x2="16" y2="9"></line><line x1="8" y1="13" x2="14" y2="13"></line></svg>
+                <SpeakerNotesOutlinedIcon />
                 <span className='px-2' style={{ display: props.open ? "block" : "none" }}>Chats</span>
               </div>
               <KeyboardArrowDownIcon color="action" />
             </li>
             <li className='flex items-center justify-between h-10 p-2 hover:rounded-md hover:bg-blue-500 hover:text-white'>
               <div className='flex items-center'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-circle" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="10" r="3"></circle><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path></svg>
+                <AccountCircleOutlinedIcon />
                 <span className='px-2' style={{ display: props.open ? "block" : "none" }}>Users</span>
               </div>
               <KeyboardArrowDownIcon color="action" />
